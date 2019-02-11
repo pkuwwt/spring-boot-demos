@@ -22,6 +22,11 @@ If you want the server listening to another port, say 8081, you can run
 java -jar -Dserver.port=8081 target/hello-springboot-1.0-SNAPSHOT.jar
 ```
 
+or add the following line to `src/main/resources/application.properties`:
+```
+server.port=8081
+```
+
 ## Reference
 
   * Beginning Spring Boot 2 - Application and Microservices with the Spring Framework, 2017
