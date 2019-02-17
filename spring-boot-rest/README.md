@@ -36,9 +36,9 @@ We have revised the `HomeController.java`, and added the following lines (a few 
   * `@ResponseBody` automatically converts the returned `List<User>` or `User` to a JSON object
   * `@RequestBody` automatically parses the JSON data in the request header to a `User` parameter. Note that, the `id` field of the `User` is automatically generated, so user doesnot need to provide an `id` field, and `savedUser` has a generated `id` field.
 
-There are two scripts to test the two APIS based on `curl`:
-  * `get.sh`
-  * `post.sh`
+There are two scripts to test the two APIs based on `curl`:
+  * `get.sh`: `curl 127.0.0.1:8080/users`
+  * `post.sh`: `curl --header "Content-type: application/json" --request POST --data '{"name":"a-name"}' 127.0.0.1:8080/user/add`
 
 ## Reference
 
